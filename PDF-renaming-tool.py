@@ -13,7 +13,6 @@ for file in os.listdir(PATH):
         sub_folder = f'{new_name}'
         os.makedirs(f'{COMPLETE_PATH}/{sub_folder}')
         shutil.move(f'{PATH}/{sub_folder}', f'{COMPLETE_PATH}/{sub_folder}')
-        input()
         print(f"{old_name} is now complete ")
     except Exception as error:
         shutil.move(f'{file}', f'{COMPLETE_PATH}')

@@ -17,7 +17,6 @@ for file in os.listdir(PATH):
         print(f"{old_name} is now complete ")
     except Exception as error:
         shutil.move(f'{file}', f'{COMPLETE_PATH}')
-        pass
 
 # Identify PDF files inserted into a lease folder on the Z drive
 # Identify title number within name and strip everything else
